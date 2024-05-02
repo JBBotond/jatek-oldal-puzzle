@@ -1,0 +1,86 @@
+html {
+    margin: 0;
+    border: none;
+    font-family: sans-serif;
+}
+
+.fejlec img{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+body header .fejlec  {
+    display: flex;
+    background: #519973;
+    height: 120px;
+    width: 100%vw;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.fejlec p {
+    font-size: xx-large;
+}
+.mainBox{
+    display: grid;
+    justify-content: center;
+    grid-template: 
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "d d d d"
+    ;
+    user-select: none;
+}
+.mainBox .tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.mainBox .tile:hover{
+    border-color: green;
+}
+.jatekAblak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    width: 60vw;
+    margin: 30px;
+}
+.jatekAblak h1 {
+    font-weight: 900;
+    font-size: xx-large;
+    
+    font-style: italic;
+    background: -webkit-linear-gradient(#519973, #78d173);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px dotted;
+    border-radius: 10px;
+    padding: 10px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+}
+section .reklamAblak {
+    background:linear-gradient(black,grey);
+    width: 200px;
+    height: 60vw;
+    margin: 30px;
+}
+.jatekAblak img{
+    width: 30vw;
+    align-self: center;
+}
