@@ -8,7 +8,7 @@ let activeTiles=[];
 let activeTilesNr=[];
 let vacantTile={vacantId: document.querySelector("#t16"),x:-1 ,y:-1};
 let removeFunc=[];
-let congrBox=document.createElement("div");
+const congrBox=document.querySelector(".congrBox");
 const resetButton=document.querySelector(".resetButton");
 let didIWin;
 let display=document.querySelector('.timer');
@@ -209,13 +209,13 @@ function gameWin(status){
     }
     resetButton.textContent="Reset";
     resetButton.addEventListener('click',resetGame);
-    document.body.appendChild(congrBox);
+    congrBox.style.visibility = 'visible';
 }
 
 function resetGame(){
     resetButton.style.visibility = 'hidden';
    resetButton.disabled = true;
-    document.body.removeChild(congrBox);
+   congrBox.style.visibility = 'hidden';
     startGame();
 }
 
